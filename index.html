@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P2-TM04</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 4 - 2º Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 4</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Misión / Tema Principal: Decisiones y Bucles: ¡El Dragón Hambriento!</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes comprendan el concepto de lógica condicional con el bloque si...entonces y el poder de la repetición con los bucles por siempre y repetir, aplicándolos para crear un programa interactivo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ La Chispa de la Idea</li>
+                                        <li>⚡ El Plan en el Suelo</li>
+                                        <li>⚡ ¡Yo Soy el Robot!</li>
+                                        <li>⚡ Del Suelo a la Pantalla</li>
+                                        <li>⚡ Círculo de Creación</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa funcional en Pictoblox con dos sprites (ej. dragón y manzana). La manzana sigue al puntero del ratón. El dragón, dentro de un bucle `por siempre`, usa un condicional `si...entonces` para detectar si está tocando la manzana y reaccionar (ej. diciendo algo).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector</li>
+                                        <li>Computadoras o tabletas con Pictoblox</li>
+                                        <li>Pizarra o rotafolio</li>
+                                        <li>Marcadores</li>
+                                        <li>Dos objetos físicos (ej. una manzana de juguete y una pelota)</li>
+                                        <li>Tarjetas gigantes de los bloques: `por siempre`, `si...entonces`, `<tocando el puntero del ratón?>` (opcional).</li>
+                                    </ul>
+                                    <strong>Preparación Previa:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (Pictoblox).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Preparación de Materiales:</strong> Tener listos los materiales unplugged (pizarra, marcadores, objetos físicos, tarjetas) para las actividades conceptuales.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: La Chispa de la Idea (Vibe Grupal) ⏰ 5 minutos</h2>
+                <p>Generar entusiasmo, presentar el reto o 'vibe' de la misión del día y conectar con las experiencias previas de los estudiantes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Pregunta Clave ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Inicia la clase con una pregunta que despierte la curiosidad sobre la capacidad de "pensar" de los personajes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Hola, creadores de mundos! Ya sabemos mover a nuestro personaje por el escenario y hacer que lleve la cuenta de puntos. Pero, ¿nuestro personaje puede pensar? ¿Puede tomar sus propias decisiones?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: El Reto del Dragón ⏰ 2 minutos</h3>
+                            <p>Plantea el reto del día con una historia divertida y fácil de entender: un dragón hambriento y selectivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Plantea un reto divertido) "Imaginen que nuestro sprite es un dragón muy, muy hambriento. Pero es un dragón un poco especial: solo come manzanas. Si le ofrecemos otra cosa, ¡no la quiere! ¿Cómo podemos enseñarle a decidir qué comer?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Establecer la "Vibe" del Día ⏰ 2 minutos</h3>
+                            <p>Declara la "vibe" de la sesión ("Programando el cerebro de un dragón") y lanza el llamado a la acción para la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Nuestra 'vibe' de hoy es: 'Programando el cerebro de un dragón'. Le daremos dos superpoderes nuevos: el poder de decidir y el poder de repetir una acción una y otra vez. ¡Vamos a crear un dragón inteligente!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: El Plan en el Suelo (Algoritmo Kinestésico y Conceptual) ⏰ 10 minutos</h2>
+                <p>Introducir los conceptos, herramientas y el algoritmo de la sesión de forma conceptual y kinestésica, usando la pizarra y analogías.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introduciendo el Bucle (Superpoder de Repetir) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Introduce la palabra secreta "BUCLE" y explica el bloque `por siempre` como una orden que se repite sin parar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Excelente! Para programar a nuestro dragón, primero necesitamos nuestro <strong>plan en el suelo</strong>. Vamos a aprender dos superpoderes."</p>
+                                <p class="dialogue assistant">"Nuestro dragón debe estar hambriento todo el tiempo, no solo una vez. Para que haga algo sin parar, usamos una instrucción mágica llamada <strong>bucle</strong>. Nuestra primera palabra secreta. Un bucle es una orden que se repite." (Muestra la tarjeta del bloque por siempre).</p>
+                                <p class="dialogue assistant">"El bucle por siempre hace que las instrucciones que pongamos dentro se repitan... ¡exacto, para siempre! Es como decirle al dragón: 'nunca dejes de tener hambre'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Introduciendo el Condicional (Superpoder de Decidir) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Introduce la palabra secreta "CONDICIONAL" y explica el bloque `si...entonces` con la regla "SI pasa algo, ENTONCES haz esto".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, el cerebro. Para que nuestro dragón decida, usamos un bloque muy especial llamado <strong>condicional</strong>. Es nuestra segunda palabra secreta. Funciona con una regla: SI pasa algo, ENTONCES haz esto." (Muestra la tarjeta del bloque si...entonces).</p>
+                                <p class="dialogue assistant">"La parte del SI es la condición, la pregunta. Por ejemplo: SI la comida que te doy es una manzana... ENTONCES la acción es... ¡comértela!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Construyendo el Plan (El Algoritmo) ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Arma la secuencia lógica en la pizarra, mostrando cómo el condicional va DENTRO del bucle y establece la condición y la acción.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Arma el plan en la pizarra con las tarjetas) "Nuestro plan para el cerebro del dragón será así:"</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+     POR SIEMPRE
+        SI < ¿estoy tocando la manzana? > ENTONCES
+            decir "¡Yum!"
+            esconder la manzana
+        FIN SI
+     FIN POR SIEMPRE
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: ¡Yo Soy el Robot! (Simulación Humana) ⏰ 5 minutos</h2>
+                <p>Reforzar la comprensión del algoritmo a través de una simulación física y dramatizada, donde los alumnos actúan como el 'robot' y el 'programador'.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Asignación de Roles ⏰ 1 minuto</h3>
+                            <p>Invita a un voluntario para ser el "Dragón Hambriento". El profesor actúa como el "Alimentador" con los objetos (manzana y pelota).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Nuestro plan se ve genial! Pero, ¿funcionará? ¡Vamos a probarlo! Es hora de <strong>¡yo soy el robot!</strong>"</p>
+                                <p class="dialogue assistant">"¡Vamos a actuar el cerebro del dragón! Necesito un 'Dragón Hambriento' y un 'Alimentador'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ejecución de la Simulación ⏰ 4 minutos</h3>
+                            <p>Guía la simulación: el "Dragón" simula el bucle, el "Alimentador" le ofrece los objetos, y el "Dragón" solo reacciona a la manzana, demostrando el condicional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Dirige la simulación: El "Dragón" repite "tengo hambre...". El profesor acerca la pelota y el dragón no reacciona. El profesor acerca la manzana y el dragón la "come").</p>
+                                <p class="dialogue assistant">"¡Perfecto! El dragón solo reaccionó cuando se cumplió la condición. ¡Su cerebro funciona!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Del Suelo a la Pantalla (Implementación Guiada) ⏰ 15 minutos</h2>
+                <p>Guiar a los estudiantes en la implementación práctica del plan en la plataforma de programación, siguiendo un modelo paso a paso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Programar el Dragón (el que decide) ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Guía a los estudiantes para elegir los sprites, seleccionar el dragón y arrastrar el evento de bandera verde y el bucle `por siempre`.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡El ensayo fue increíble! Ahora es momento de llevar el cerebro de nuestro dragón <strong>del suelo a la pantalla</strong>. ¡Abran Pictoblox!"</p>
+                                <p class="dialogue assistant">"¡A programar nuestro dragón! Primero, elijamos un sprite de dragón y otro de manzana."</p>
+                                <p class="dialogue assistant">"Seleccionen el sprite del dragón. Arrastren el evento al presionar bandera verde."</p>
+                                <p class="dialogue assistant">"Ahora, de la paleta naranja de Control, arrastren el gran bloque por siempre. Todo lo que pongamos dentro se repetirá sin parar."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Añadir la Decisión ⏰ 4 minutos</h3>
+                            <p>Muestra cómo arrastrar el bloque `si...entonces` dentro del bucle y cómo insertar la condición `<tocando [manzana]?>` desde la paleta de Sensores.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Dentro del por siempre, arrastren el bloque si...entonces."</p>
+                                 <p class="dialogue assistant">"Para la condición, ese hueco hexagonal, vamos a la paleta azul claro de Sensores. Busquen el bloque `<tocando el puntero del ratón?>` y encájenlo en el hueco."</p>
+                                 <p class="dialogue assistant">"Hagan clic en 'puntero del ratón' y cambien la opción al nombre de su sprite de manzana (ej. 'Apple'). La condición ahora es: ¿Estoy tocando la manzana?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: La Reacción del Dragón ⏰ 2 minutos</h3>
+                            <p>Indica cómo poner el bloque `decir` dentro del condicional para programar la reacción del dragón.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Dentro del si, vamos a Apariencia y ponemos un bloque decir "¡DELICIOSO!" por 1 segundo."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Programar la Manzana y Probar ⏰ 5 minutos</h3>
+                            <p>Explica cómo programar la manzana para que siga al ratón y anima a los estudiantes a probar la interacción completa.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, hagan clic en el sprite de la manzana. ¡Vamos a programarla para que la podamos mover con el ratón! El programa es: al presionar bandera verde, luego un bucle por siempre, y dentro ir a [puntero del ratón]."</p>
+                                <p class="dialogue assistant">"¡Presionen la bandera verde! Muevan la manzana con el ratón. ¿Qué pasa cuando tocan al dragón con ella? ¡Debería hablar!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Círculo de Creación (Reflexión y Cierre) ⏰ 5 minutos</h2>
+                <p>Cerrar la sesión con una reflexión grupal, celebrar los logros, reforzar los conceptos clave y conectar con la próxima misión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Celebración y Repaso de Conceptos ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Felicita a los estudiantes por darle un "cerebro" a su dragón. Guía un repaso interactivo de las "palabras secretas" (BUCLE y CONDICIONAL).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Genial, veo que todos están alimentando a sus dragones! Vamos a reunirnos en nuestro <strong>círculo de creación</strong> para celebrar."</p>
+                                <p class="dialogue assistant">"¡Lo lograron! ¡Le han dado un cerebro a su dragón! Repasemos los dos superpoderes que aprendimos hoy:"</p>
+                                <p class="dialogue assistant">"¿Cómo se llama la instrucción que repite las cosas sin parar?" (Espera la respuesta del grupo: ¡BUCLE!)<br>"¿Y cómo se llama la instrucción que le permite al programa tomar una decisión con la regla SI... ENTONCES?" (Espera la respuesta del grupo: ¡CONDICIONAL!)."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Final ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Cierra la sesión reforzando la importancia de estos bloques para crear programas inteligentes y felicita a los "entrenadores de dragones".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Con bucles y condicionales, ahora pueden crear programas y juegos mucho más inteligentes e interactivos! Han dado un paso gigante como programadores. ¡Felicidades, entrenadores de dragones!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
